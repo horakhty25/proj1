@@ -4,85 +4,204 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>proj2</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="body.css">
-    <link rel="stylesheet" href="footer.css">
+    <title>web </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="C:\Users\ASUS\Downloads\fontawesome-free-6.2.0-web.zip">
+    <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
 </head>
 <body>
+    <!-- header -->
     <div class="header">
-        <div class="headertop">
-            <div class="language">
-                <!-- <span class="mainmenu">VietNamese</span> -->
-                <ul class="menu1">
-                    <div class="mainmenu">Select language</ddiv>
-                    <div class="menu__dropdown"><a href="">VietNamese</a></div>
-                    <div class="menu__dropdown"><a href="">English</a></div>
-                    <div class="menu__dropdown"><a href="">Japanese</a></div>
-                </ul>
-                <div class="icon__menu">
-                    <i class="fas fa-caret-down"></i>
-                </div>
+        <div class="navbar">
+            <div class="logo">
+                <img class="img-logo" src="https://th.bing.com/th/id/R.21fefc341b2f89b077e38edf230c1aa5?rik=oKWDmRewpNq%2beA&riu=http%3a%2f%2fww1.prweb.com%2fprfiles%2f2015%2f05%2f05%2f12703887%2fVOID.png&ehk=goP4vRjqM8gsdqTIdUdrsAfRcuperGIt9CAYH%2foXxS8%3d&risl=&pid=ImgRaw&r=0">
+                <p class="text-logo">THE VOID</p>
             </div>
-            <div class="menu2">
-                <div class="phonenumber">
-                    <a href="">
-                        <i class="fas fa-phone-alt"></i>
-                        <span class="header__number">+8448734484</span>
-                    </a>
+            <div class="menu">
+                <div class="main-menu">
+                    <ul class="menu1">
+                        <li class="menu2"><a href="">Trang Chủ</a></li>
+                        <li class="menu2"><a href="">Giới Thiệu</a></li>
+                        <li class="menu2"><a href="">Dịch Vụ</a></li>
+                        <li class="menu2"><a href="">Tin Tức</a></li>
+                        <li class="menu2"><a href="">Liên Hệ</a></li>
+                    </ul>
                 </div>
-                <div class="gmail">
-                    <a href="">
-                        <i class="fas fa-envelope"></i>
-                        <span class="header__gmail">noob333@gmail.com</span>
-                    </a>
-                </div>
-                <div class="appointment">
-                    <p class="btn-appointment"><a href="">APPOINTMENT</a></p>
+                <div class="sub-menu">
+                    <span class="icon"> <i class="fa fa-volume-control-phone" aria-hidden="true"></i></span>
+                    <span class="text-menu"><a href="">0345679123</a></span>
                 </div>
             </div>
         </div>
-        <div class="header2">
-            <div class="logoheader">
-                <img src="data:image/webp;base64,UklGRnAFAABXRUJQVlA4TGMFAAAvjMAJEO8HK5JkW1F2X3SgCpHY23/u6X2JcNA2kiR5qvc+NMcfzAE4CvvUCgSSXPZnHHZt28aefb8/tm3zKVWkjNSQsjLylkJs47N9fRN4fzYoISHh4RMNQjgJwCQIvvGIX2SoVwT9IBjE3soCg3k89ScoNFrkiFZABxZGcIt/xKcmQFYBvGvzkQB8fHX8JYAe2ChWgMJrIsYV0pXE9PUAECTwcZcAPlaAg8uEh6gDDWSgAw10IANYbiSgUB0S4+gCwTNsCLyjPheNHvioT7m79OMQBCM4zviCc+9wCtAIQc/FxvV9sHCGXmw2gAQpAsQZeyDYBOkYapyj/+vv5Pm1iUFsoQuLmMAEukAaDBQqAwk0kEACDWRBArAS2oIsgIQGhQcKBQ0JCQUFgRQCHBoKGgYMGgYGGgYKDC0EBFokEFAw4EghYK9e8G8BKjB8uQFs1bsC6G59GMR+FiTwOQABfleAQgS2WjkFGEyseuDvAvTAR51hJ4Ybj2Dd5NhuLGDgeuJu34jP6edzuLhP/avT169ujP/HBMb/gR72/6Yt5TfKnsm2m2zbtl0z2U22XTP55jqZk23btmtzfdfaGJ31W7+N86z/I/oPwW0jRxLr8s0MNHH3Df2HTDPXnMsus87aRxxz/EGn7Efi/Pvr72+98bctuPXpB8iPmUgyYtiBe28hBH31y8cfvf0mc8uDnQ75MTNNJ9vngK2cnq9/+lzwVMcbNMOCFXbfmdV89+MXkvs8QjTv7EOXXHOtI4864eCuXXdgLed/I+owvs2Jw61tbcJpP3jv6EOGWdvbhjO/9dSkk02x6GKrrLjq+ocdO0Jytq/6iRuSnOurATWdJ/jLL4Mae/0Vr0zS2Gt/3thDxi6ndZuhMw9u7NXOo93Ph6n9AYCQKASSNmMXaYGdZypr4ySO04I3lG5DxeiuiEgBaPPH6Rdqxd19lbW5AqB4Q2qPvamxQ6onaOoF2vB8jdoIAHJ2RYLtZ20mDDNqdeZefPmmHrmO6lAAYnY4JCZzN2uMThnpcjFGCNBuiw3kLZl0GJdaY4MNN9p4k00323zrnWzHGRdedPEll152+RVXjhx1zfV3Up2Jx7j7jsQJyJV7llgT+3MExa6igjUFRCZFCiAjA9UN4XdXxCN7OHFhywO7dMgVQEwpoNmn4YvY1RVrgkmAQtvGEgBvgbJZCjA5EPZSya5RorRwsONcAoEGMMb9cwAo0ux42aNiC0othEahbQQSVqF7iVKwQ0wR6y8sPQaI2OF3FVbOSmwmuSdLs7DCKJQKiLVWvVYCSIJYBIVUhbZAV+AlZkxBpDNtUgkRf+oolabKmmeJlVdavf4iL7zcAHu4I3MEwvmtIxLP/RiFpIKWtzDlfE2fb49de1dtIdhd4XxppBSa2J+p8otk8jZehp64vS52h8i6LZQV9X5xmkr2EqlrUOxc6RkHt/Ka+PgdNUR2pxJAuzS/VnK+Wukq3dWQ26YISCmvwLojrWPQxEPaeYF+tvpTK3uZ54j5qij4xcKfMjGA3GakPMpITYETgDDP4LyR0E7KGBrYdepyzd1zc+Un+I4jd3bBeZQBqXaOMZuEF2ga4zRpu8XSHpkxvMwQezXgD+5+XbMOXaH5W5fnqJXRWW54gckzMrpmkzZafqcndGpy0NLrNjaa/BiO1mvsIb+sJtiupo6vthH98c9VI0ddzcZXO0p+e6diZ3y0xy625hzrkw/JS7OJtmQ1Z1mfffDue++/+FJf321+mUOy526s5vTvKxYZfYNH5ifBXvs7ORdUrXbvTd6YdhbX8JP3FXr+/7JiQ0+SH9N/4amIOfy4Q0+Sg/77+VPR/eTFEAA=" alt="ảnh logo web">
-            </div>
-            <div class="menu__header2">
-                <ul class="menu__headermain">
-                    <li class="menu__headersub"><a href="">Home</a></li>
-                    <li class="menu__headersub"><a href="">About</a></li>
-                    <li class="menu__headersub"><a href="">Department</a></li>
-                    <li class="menu__headersub"><a href="">Pages</a></li>
-                    <li class="menu__headersub"><a href="">Blog</a></li>
-                    <li class="menu__headersub"><a href="">Contact</a></li>
-                </ul>
-            </div>
-            <div class="btn__header2">
-                <input class="btn-search" type="text" placeholder="search...">
-                <i class="fas fa-search"></i>
-            </div>
-        </div>
-        <div class="header3">
-            <div class="text-header3">
-                <div class="maintext-header3">
-                    <span class="text-header3">Growing up your</br>
-                        children with our most</br>
-                        smart monitization</span>
-                </div>
-                <div class="subtext-header3">
-                    <span class="text-header3">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut</br> labore et dolore magna aliqua.</span>
-                </div>
-                <span class="btn-header3"><a href="">Learn More</a></span>
-            </div>
+        <div class="text-boxheader">
+            <p class="main-text">CHÚNG TÔI Ở ĐÂY ĐỂ GIÚP BẠN</p></br>
+            <p class="sub-text">HÃY ỦNG HỘ CHÚNG TÔI</p></br>
+            <span class="btn"><a href="">BẮT ĐẦU</a></span>
         </div>
     </div>
-    <div class="body">
-
+    <!-- body -->
+    <div class="body-web">
+        <!-- body1 -->
+        <div class="body1">
+            <img class="bgr1-body" src="https://loanpro.io/wp-content/uploads/2021/03/Consumer-Lending4V2-1-1024x596.png">
+            <div class="text-btn">
+                <div class="text1-body">
+                    <p class="text1-body sub1-text-body">CHÀO MỪNG BẠN ĐẾN VỚI CHÚNG TÔI!</p>
+                    <p class="text1-body sub2-text-body">Dịch vụ của chúng tôi vô cùng tào lao.</br>
+                        Đến với trang web này bạn sẽ chẳng nhận lại được gì.</br>
+                        Tôi chỉ nói thế cho vui chứ thật sự nó là thế.</br>
+                        Trang web được viết bởi TrieuHiroVN và noob.</br>
+                        Chúng tôi đang trong quá trình hoàn thiện các kĩ năng.</br>
+                        Đây chỉ là một trang web demo cho kế hoạch tiếp theo.</br>
+                        Cảm ơn bạn vì đã đọc. 
+                        </p>
+                </div>
+                <div class="btn-body">
+                    <div class="btn-body-left">
+                        <span class="sub-btn sub-btn-left "><a href="">LIÊN HỆ VỚI CHÚNG TÔI</a></span>
+                        </div>
+                    <div class="btn-body-right">
+                        <span class="sub-btn sub-btn-right"><a href="">CHÚNG TÔI LIÊN HỆ BẠN</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- body2 -->
+        <div class="body2">
+            <div class="text2-body">
+                <p class="main-text2-body">NHỮNG ĐIỀU TỐT NHẤT DÀNH CHO BẠN</p>
+                <p class="sub-text2-body">HÃY VUI VẺ KHI TRONG TRANG WEB CỦA CHÚNG TÔI</p>
+            </div>
+            <div class="menubox">
+                <div class="menubox1">
+                    <div class="menu-box1 sub-box">
+                        <img class="logo-box" src="https://th.bing.com/th/id/OIP.3WirgKsGqKQ7TlMQMdBAwQAAAA?pid=ImgDet&w=300&h=247&rs=1">
+                        </br>
+                        <span class="text-box"><a href="">Lưu trữ</a></span>
+                    </div>
+                </div>
+                <div class="menubox2">
+                    <div class="menu-box2 sub-box">
+                        <img class="logo-box" src="https://genk.mediacdn.vn/zoom/250_155/2019/7/4/ava-15622530448502074507693-crop-1562253268280262597910.png">
+                        </br>
+                        <span class="text-box"><a href="">Xóa dữ liệu</a></span>
+                    </div>
+                </div>
+                <div class="menubox3">
+                    <div class="menu-box3 sub-box">
+                        <img class="logo-box" src="https://makealivingwriting.com/wp-content/uploads/Online-Writing-Portfolio-300x182.jpg">
+                        </br>
+                        <span class="text-box"><a href="">Khôi phục</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="btn2body">
+                <span class="text-btn2"><a href="">Liên hệ với chúng tôi</a></span>
+            </div>
+        </div>
+        <!-- body3 -->
+        <div class="body3">
+            <div class="text-body3">
+                <p class="title_text3--body">Chăm sóc khách hàng</p></br>
+                <span class="main_text3--body">Hãy tìm hiểu nhiều dịch vụ của chúng tôi,
+                </br> chúng tôi sẽ làm bạn thất vọng :))</span></br>
+                <span class="sub_text3--body">Với chúng tôi, không gì là không thể, vì vậy hãy theo dõi 
+                </br>cập nhật thường xuyên những vấn đề của bạn</span>
+            </div>
+            <div class="btn-body3">
+                <span class="icon"> <i class="fa fa-volume-control-phone" aria-hidden="true"></i></span>
+                <span class="text-menu"><a href="">0345679123</a></span>
+            </div>
+        </div>
+        <!-- body4 -->
+        <div class="body4">
+            <div class="text-body4">
+                <div class="main-text4">
+                    <span>Tìm hiểu chúng tôi</span>
+                </div>
+                <div class="sub-text4">
+                    <span> Cách chúng tôi thực hiện</span>
+                </div>
+            </div>
+                <div class="menubox-body4">
+                    <div class="menubox4-1">
+                        <div class="menu-box4-1 sub-box4">
+                            <img class="logo-box4-4" src="https://assets.website-files.com/5d8a2888296e91abbdcb65f0/5f719a7a08376244a3959f23_5db6a1ab5613b12ffb06f42f_Model-Bisnis-eCommerce-B2B-B2C-C2C-C2B-B2G-p-500.jpeg">
+                            </br>
+                            <span class="text-box4-4">Lưu trữ</span>
+                        </div>
+                    </div>
+                    <div class="menubox4-2">
+                        <div class="menu-box4-2 sub-box4">
+                            <img class="logo-box4-4" src="https://cdn.dribbble.com/users/1018473/screenshots/6427252/file_monitoring.jpg">
+                            </br>
+                            <span class="text-box4-4">Xóa dữ liệu</span>
+                        </div>
+                    </div>
+                    <div class="menubox4-3">
+                        <div class="menu-box4-3 sub-box4">
+                            <img class="logo-box4-4" src="https://broadview-innovations.com/assets/images/mobile-development-back.png">
+                            </br>
+                            <span class="text-box4-4">Khôi phục</span>
+                        </div>
+                    </div>
+                    <div class="menubox4-4">
+                        <div class="menu-box4-4 sub-box4">
+                            <img class="logo-box4-4" src="https://www.ooxoft.com/content/images/size/w1000/2021/07/image.png">
+                            </br>
+                            <span class="text-box4-4">Khởi chạy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="footer">
+        <div class="main-footer">
+            <div class="footer1">
+                <div class="logo__footer">
+                    <!-- <img class="img-logo-footer" src="https://d302e0npexowb4.cloudfront.net/wp-content/uploads/2018/09/12143836/The-Void-Logo.png"> -->
+                    <p class="text-logo-footer">THE VOID </br></p>
+                        <p class="text-letter"> TEAM</p>
+                </div>
+                <div class="text-footer">
+                    <span>Hãy ủng hộ và đồng hành cùng chúng tôi.</span>
+                </div>
+            </div>
+            <div class="footer2">
+                <div class="menu-footer">
+                    <ul class="ul-menu"><span> MENU</span>
+                        <li class="ol-menu"><a href="">Trang chủ</a></li>
+                        <li class="ol-menu"><a href="">Sản phẩm </a></li>
+                        <li class="ol-menu"><a href="">Dịch vụ</a></li>
+                        <li class="ol-menu"><a href="">Giới thiệu</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer3">
+                <div class="contact-footer">
+                    <ul class="ul-menu"><span>CONTACT </span>
+                        <li class="ol-menu"><a href="">Gói thường</a></li>
+                        <li class="ol-menu"><a href="">Gói cao cấp</a></li>
+                        <li class="ol-menu"><a href="">Thắc mắc của bạn</a></li>
+                        <li class="ol-menu"><a href="">Quy trình làm việc</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer4">
+                <div class="about-tvt">
+                    <span>ABOUT</span></br>
+                    <span class="adress">Địa chỉ: 319 C16 Lý Thường Kiệt, Phường 15,</br> Quận 11, Tp.HCM. </span></br>
+                    <span class="phone-number">Số điện thoại: 8467836484</span>
 
+                </div>
+            </div>
+        </div>
+        <div class="sub-footer">
+            <div><span>TheVoidTeam © 2022. All rights reserved.</span></div>
+        </div>
     </div>
+
 </body>
 </html>
