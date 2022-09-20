@@ -1,6 +1,6 @@
 var a = 'welcome to my website'
 var b = 'this is just a single website, so no links will work'
-// confirm  (b)
+confirm  (b)
 
 
 function menubox() {
